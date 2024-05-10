@@ -7,3 +7,6 @@ app = Flask(__name__)
 def get_scraped_data():
     scraped_data = scrape_data()
     return jsonify(scraped_data)
+
+def create_app():
+    return app
